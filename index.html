@@ -27,33 +27,28 @@
 
     <script type="text/babel">
 
-    function Shinhan() {
-        const {
-            HashRouter,
-            Route,
-            Link,
-            Switch
-        } = window.ReactRouterDOM;
+    function Sinhan() {
+    const { HashRouter, Route, Switch } = window.ReactRouterDOM;
 
-        return (
-            <HashRouter>
-                <Header/>
-                <Navi/>
+    return (
+        <HashRouter>
+            <Header />
+            <Navi />
 
-                <Switch>
-                    <Route exact path ="/" component={Home}/>
-                </Switch>
+            <Switch>
+                <Route exact path="/" component={Home} />
+            </Switch>
 
-                <Footer/>
-            </HashRouter>
-        );
-    }
+            <Footer />
+        </HashRouter>
+    );
+}
 
-    ReactDOM.render(
-        <Shinhan/>,
-        document.getElementById("root")
-    )
-    </script>
+ReactDOM.render(
+    <Sinhan />,
+    document.getElementById("root")
+);
+</script>
 
     
 </body>
