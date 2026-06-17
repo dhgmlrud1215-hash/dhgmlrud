@@ -55,23 +55,23 @@ function Footer() {
                 </a>
             </div>
 
-            <div class="footer-info">
+            <div className="footer-info">
                 <p>서울특별시 중구 을지로 100(을지로2가, 파인에비뉴 A동)
                     <br/>대표이사 박창훈 사업자등록번호 202-81-48079
                 </p>
 
-                <p class="copyright">
+                <p className="copyright">
                     &copy; 2020 Shinhan Card Co., Ltd. All rights reserved.
                 </p>
 
-                <div class="ert">
+                <div className="ert">
                     <img src="img/footer/nbci.png" alt="NBCI 인증 마크"/>
                     <img src="img/footer/ccm.png" alt="CCM 인증 마크"/>
                     <img src="img/footer/oneshinhan.png" alt="One Shinhan 로고"/>
                 </div>
             </div>
 
-            <div class="footer-family">
+            <div className="footer-family">
                 <select defaultValue="" aria-label="전용회원 사이트 선택">
                     <option value="">전용회원</option>
                     <option value="welfare">복지카드 회원</option>

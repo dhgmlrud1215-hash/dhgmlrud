@@ -226,12 +226,12 @@ function Navi() {
 
                 <ul>
                     <li className="sub-name">주택자금대출</li>
-                    <li class="sub-detail">보증금대출 · 전세대출조회 · 모집수수료</li>
+                    <li className="sub-detail">보증금대출 · 전세대출조회 · 모집수수료</li>
                 </ul>
 
                 <ul>
                     <li className="sub-name">기타서비스</li>
-                    <li class="sub-detail">대출서류 · 수수료 · 금리인하요구권</li>
+                    <li className="sub-detail">대출서류 · 수수료 · 금리인하요구권</li>
                 </ul>
 
             </div>
@@ -245,15 +245,15 @@ function Navi() {
              <div className="navi-group">
                 <ul>
                     <li className="sub-name">카드안내</li>
-                    <li class="sub-detail">추천카드 · 프리미엄카드</li>
-                    <li class="sub-detail">신용카드 · 체크카드 · 캐릭터카드</li>
+                    <li className="sub-detail">추천카드 · 프리미엄카드</li>
+                    <li className="sub-detail">신용카드 · 체크카드 · 캐릭터카드</li>
                 </ul>
 
                 <ul>
                     <li className="sub-name">기타·제휴 카드안내</li>
-                    <li class="sub-detail">제휴 · 기프트 · 선불카드</li>
-                    <li class="sub-detail">DIY·PUZZLE · 사업자 · 복지카드</li>
-                    <li class="sub-detail">트래블 · 해외이용 추천카드</li>
+                    <li className="sub-detail">제휴 · 기프트 · 선불카드</li>
+                    <li className="sub-detail">DIY·PUZZLE · 사업자 · 복지카드</li>
+                    <li className="sub-detail">트래블 · 해외이용 추천카드</li>
                 </ul>
 
                 <ul>
@@ -275,7 +275,7 @@ function Navi() {
              <div className="navi-group single">
                 <ul>
                     <li className="sub-name">Tops Club</li>
-                    <li class="sub-detail">안내 · 쿠폰</li>
+                    <li className="sub-detail">안내 · 쿠폰</li>
                 </ul>
             </div>
           </div> 
@@ -288,9 +288,9 @@ function Navi() {
               <div className="navi-group">
                 <ul>
                     <li className="sub-name">카드상담</li>
-                    <li class="sub-detail">재발급 · 분실신고 · 거래정지</li>
-                    <li class="sub-detail">금융사고 · 부정사용 신고</li>
-                    <li class="sub-detail">불법모집 · 가맹점 제보</li>
+                    <li className="sub-detail">재발급 · 분실신고 · 거래정지</li>
+                    <li className="sub-detail">금융사고 · 부정사용 신고</li>
+                    <li className="sub-detail">불법모집 · 가맹점 제보</li>
                 </ul>
 
                 <ul>
@@ -299,24 +299,24 @@ function Navi() {
 
                 <ul>
                     <li className="sub-name">이용안내</li>
-                    <li class="sub-detail">이용안내 · 고객지원</li>
+                    <li className="sub-detail">이용안내 · 고객지원</li>
                 </ul>
 
                 <ul>
                     <li className="sub-name">인증서안내</li>
-                    <li class="sub-detail">인증서 · 본인확인</li>
+                    <li className="sub-detail">인증서 · 본인확인</li>
                 </ul>
 
                 <div className="group-line"></div>
 
                 <ul>
                     <li className="sub-name">금융소비자보호</li>
-                    <li class="sub-detail">소비자보호 · 민원 · 이의신청</li>
+                    <li className="sub-detail">소비자보호 · 민원 · 이의신청</li>
                 </ul>
 
                 <ul>
                     <li className="sub-name">개인정보보호</li>
-                    <li class="sub-detail">개인정보 · 신용정보 관리</li>
+                    <li className="sub-detail">개인정보 · 신용정보 관리</li>
                 </ul>
             </div>
           </div>
