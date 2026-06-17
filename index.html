@@ -25,29 +25,24 @@
     <script type="text/babel" src="js/Footer.js"></script> 
 
 
-    <script type="text/babel">
+   <script type="text/babel">
 
-    function Sinhan() {
-    const { HashRouter, Route, Switch } = window.ReactRouterDOM;
+function Sinhan() {
+  const { HashRouter, Route, Switch } = window.ReactRouterDOM;
 
-    return (
-        <HashRouter>
-            <Header />
-            <Navi />
-
-            <Switch>
-                <Route exact path="/" component={Home} />
-            </Switch>
-
-            <Footer />
-        </HashRouter>
-    );
+  return (
+    <HashRouter>
+      <Header />
+      <Navi />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+      <Footer />
+    </HashRouter>
+  );
 }
 
-ReactDOM.render(
-    <Sinhan />,
-    document.getElementById("root")
-);
+ReactDOM.render(<Sinhan />, document.getElementById("root"));
 </script>
 
     
