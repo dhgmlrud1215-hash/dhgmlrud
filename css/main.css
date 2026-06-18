@@ -186,7 +186,20 @@ h3{color: #222;}
 .card-wrap {
     display: flex; 
     gap: 10px;
-    overflow: hidden; 
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    cursor: grab;
+
+    scrollbar-width: none;
+}
+
+.card-wrap::-webkit-scrollbar {
+    display: none;
+}
+
+.card-wrap.active {
+    cursor: grabbing;
 }
 
 .card {
@@ -197,6 +210,12 @@ h3{color: #222;}
     box-shadow:0 12px 10px rgba(15,23,42,0.08);
     padding: 10px 0;
     cursor: pointer;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 24px rgba(15,23,42,0.14);
 }
 
 .card-img {
@@ -207,10 +226,17 @@ h3{color: #222;}
 
 .card-img img {
     transform: rotate(90deg);
-    width: 100%; height: auto;
+    width: 100%;
+    height: auto;
     flex-shrink: 0;
+    transition: filter .3s, transform .3s;
+    filter: drop-shadow(0 6px 10px rgba(0,0,0,.10));
 }
 
+.card:hover .card-img img {
+    transform: rotate(90deg) scale(1.04);
+    filter: drop-shadow(0 16px 24px rgba(0,0,0,.24));
+}
 
 .info {
     height: 180px;
@@ -239,9 +265,16 @@ h3{color: #222;}
     white-space: nowrap;
 }
 
+.card:hover .hash li {
+    color: #0046ff;
+}
+
 .content {font-size: 14px; color: #222;}
 .content span {font-weight: bold;}
 
+.card:hover a {
+    color: #0046ff;
+}
 
 /* 빠른서비스 */
 .service {margin-bottom: 100px;}

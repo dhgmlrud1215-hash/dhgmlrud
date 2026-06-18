@@ -1,51 +1,56 @@
 $(function(){
-   let isDown = false;
-   let startX;
-   let scrollLeft;
-   let currentX = 0;
-   let animationId = null;
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+    let currentX = 0;
+    let animationId = null;
 
-   const $slider = $('.card-wrap');
-   const speed = 1;
-   const smooth = 0.15;
+    const $slider = $('.card-wrap');
+    const speed = 1;
+    const smooth = 0.18;
 
-   function animateScroll() {
-    if(!isDown) return;
+    function animateScroll() {
+        if (!isDown) {
+            cancelAnimationFrame(animationId);
+            animationId = null;
+            return;
+        }
 
-    const walk = (currentX - startX) * speed;
-    const target = scrollLeft - walk;
-    const current = $slider.scrollLeft();
+        const walk = (currentX - startX) * speed;
+        const target = scrollLeft - walk;
+        const current = $slider.scrollLeft();
 
-    $slider.scrollLeft(current + (target - current) * smooth);
+        $slider.scrollLeft(current + (target - current) * smooth);
 
-    animationId = requestAnimationFrame(animateScroll);
-   }
+        animationId = requestAnimationFrame(animateScroll);
+    }
 
-   $('.card-wrap').on('mousedown',function(e) {
-    isDown = true;
-    $(this).addClass('active');
+    $slider.on('mousedown', function(e) {
+        isDown = true;
+        $(this).addClass('active');
 
-    startX = e.pageX;
-    scrollLeft = $(this).scrollLeft();
-   });
+        startX = e.pageX;
+        currentX = e.pageX;
+        scrollLeft = $(this).scrollLeft();
 
-   $(document).on('mouseup',function() {
-    isDown = false;
-    $slider.removeClass('active');
-   });
+        if (!animationId) {
+            animationId = requestAnimationFrame(animateScroll);
+        }
+    });
 
-   $slider.on('mouseleave',function() {
-    isDown = false;
-   });
+    $(document).on('mouseup', function() {
+        isDown = false;
+        $slider.removeClass('active');
+    });
 
-   $slider.on('mousemove',function(e) {
-    if(!isDown) return;
+    $slider.on('mouseleave', function() {
+        isDown = false;
+        $slider.removeClass('active');
+    });
 
-    e.preventDefault();
-
-    const x = e.pageX;
-    const walk = (x-startX)*1.5;
-
-    $(this).scrollLeft(scrollLeft - walk);
-   });
+    $slider.on('mousemove', function(e) {
+        if (!isDown) return;
+        e.preventDefault();
+        currentX = e.pageX;
+    });
 });
