@@ -40,12 +40,16 @@ function MainVisual() {
                 <a href="#">이용대금</a>
                 <a href="#">포인트조회</a>
                 <a href="#">즉시결제</a>
+                <a href="#">카드 이용내역</a>
+                <a href="#" className="cs-link">상담문의</a>
             </div>
 
-            <div className="login-notice">
-                <strong>진행중 이벤트</strong>
-                <a href="#">혜택 이벤트 확인하기 →</a>
-                <p>6월 캐시백 이벤트</p>
+            <div className="login-alert">
+                <div className="alert-title">
+                    <img src="img/header/sos.svg" alt="" />
+                    <strong>금융소비자 주의경보</strong>
+                </div>
+                <p>개인명의 사칭 및 보이스피싱에 유의하세요.</p>
             </div>
         </aside>
         </section>

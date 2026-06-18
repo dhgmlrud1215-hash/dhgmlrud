@@ -15,14 +15,23 @@ body {font-family: 'Noto Sans', sans-serif;}
     flex: 1;
     display: flex;
     justify-content: center;
-    position: static;
+    align-items: center;
     background: #fff;
+}
+
+.navi-wrap nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navi {
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
     align-items: center;
-    gap: 36px;
+    gap: 20px;
     height: auto;
     font-size: 20px;
     font-weight: 500;

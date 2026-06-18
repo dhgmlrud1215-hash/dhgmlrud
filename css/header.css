@@ -13,9 +13,8 @@ body {font-family: 'Noto Sans', sans-serif;}
 #header {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 16px 20px;
     height: 72px;
+    padding: 0 20px;
 }
 
 #header img {
@@ -49,6 +48,12 @@ body {font-family: 'Noto Sans', sans-serif;}
     content: "";
 }
 
+.header-left {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .header-right {
     margin-left: auto;
     position: static;
@@ -60,4 +65,56 @@ body {font-family: 'Noto Sans', sans-serif;}
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.search-panel {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    padding: 28px 0;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    z-index: 9998;
+}
+
+.search-box,
+.search-keyword,
+.search-service {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 18px 22px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    font-size: 18px;
+}
+
+.search-keyword,
+.search-service {
+    margin-top: 22px;
+}
+
+.search-keyword h4,
+.search-service h4 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.search-keyword ul,
+.search-service ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-keyword li,
+.search-service li {
+    padding: 9px 14px;
+    border-radius: 999px;
+    background: #f3f6fb;
+    font-size: 14px;
 }
