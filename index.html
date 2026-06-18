@@ -6,6 +6,9 @@
     <title>메인</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navi.css">
+    <link rel="stylesheet" href="css/mainvisual.css">
     <link rel="stylesheet" href="css/main.css?v=4">
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -19,8 +22,9 @@
 <body>
 <div id="root"></div>
 
-    <script type="text/babel" src="js/Header.js"></script>
     <script type="text/babel" src="js/Navi.js"></script>
+    <script type="text/babel" src="js/Header.js"></script>
+    <script type="text/babel" src="js/MainVisual.js"></script>
     <script type="text/babel" src="js/Home.js"></script>
     <script type="text/babel" src="js/Footer.js"></script>
 
@@ -32,7 +36,6 @@ function Sinhan() {
   return (
     <HashRouter>
       <Header />
-      <Navi />
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>

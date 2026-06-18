@@ -1,0 +1,63 @@
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+* {box-sizing: border-box;}
+body {font-family: 'Noto Sans', sans-serif;}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 16px 20px;
+    height: 72px;
+}
+
+#header img {
+    width: 130px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo {
+     flex-shrink: 0;
+}
+
+.customer-type {
+    flex-shrink: 0;
+    margin-right: 40px;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+    margin-top: 0;
+}
+
+.list li:after {
+    content: "|";
+    margin-left: 5px;
+    color: #666666;
+}
+
+.list li:last-child:after {
+    content: "";
+}
+
+.header-right {
+    margin-left: auto;
+    position: static;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

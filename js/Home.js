@@ -82,9 +82,7 @@ function Home() {
 
     return(
         <>
-    <div className="banner" role="region" aria-label="메인 프로모션 배너">
-        <img src={images[index]} alt="banner" />
-    </div>
+    <MainVisual />
 
     <section className="category" aria-label="혜택 카테고리">
         <h3>혜택 카테고리</h3>

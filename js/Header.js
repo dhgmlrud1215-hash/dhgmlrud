@@ -2,7 +2,8 @@ function Header() {
     const {Link} = window.ReactRouterDOM;
 
     return(
-            <header id="header">
+        <header className="site-header">
+            <div id="header">
                 <h1 className="logo">
                     <Link to="/">
                         <img src="img/header/ci-shinhan-pc.png" alt="로고" />
@@ -16,6 +17,8 @@ function Header() {
                         <li>가맹점</li>
                     </ul>
                 </div>
+
+                <Navi />
 
                 <div className="header-right">
                     <button type="button" className="search" aria-label="검색 열기">
@@ -35,10 +38,9 @@ function Header() {
                             <circle cx="11" cy="11" r="8"/>
                         </svg>
                     </button>
-        
-                    <p className="login">로그인</p>
                 </div>
-            </header>
+            </div>
+        </header>
     );
 }
 window.Header = Header;

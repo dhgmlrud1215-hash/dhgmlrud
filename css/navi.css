@@ -1,0 +1,116 @@
+
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+* {box-sizing: border-box;}
+body {font-family: 'Noto Sans', sans-serif;}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background: #fff;
+}
+
+.navi-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: static;
+    background: #fff;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    height: auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navi button {
+    border: 0;
+    background: none;
+    font: inherit;
+    color: #222;
+    cursor: pointer;
+}
+
+.content-wrap {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 430px;
+    max-height: calc(100vh - 80px);
+    background: #fff;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+    overflow-y: auto;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.content-wrap.active {
+    display: block;
+}
+
+.menu-content {
+    display: none;
+}
+
+.menu-content.active {
+    display: block;
+}
+
+.menu-inner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.menu-inner h4 {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.menu-inner h4::after {
+    content: " >";
+}
+
+.navi-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    column-gap: 36px;
+    row-gap: 36px;
+    position: relative;
+}
+
+.navi-group ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navi-group .sub-name {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.navi-group .sub-detail {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+.navi-group.single {
+    display: block;
+}
+
+.navi-group.single ul {
+    width: 300px;
+}
