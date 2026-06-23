@@ -378,17 +378,17 @@ h3{color: #222;}
 
 /* solpay배너 */
 .solpay {
-    max-width: 1800px;
-    margin: 90px auto 70px;
+    max-width: 1850px;
+    margin: 80px auto 70px;
     padding: 0 20px;
 }
 
 .solpay img {
     width: 100%;
     display: block;
-    height: auto;
-    max-height: none;
-    object-fit: contain;
+    height: clamp(360px, 28vw, 430px);
+    object-fit: cover;
+    object-position: center;
 }
 
 
