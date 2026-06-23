@@ -7,9 +7,9 @@ const cardData = [
   releaseDate: "2016.05.31",
 
   benefitsText: [
-    "쇼핑 10% 할인",
-    "생활 10% 할인",
-    "해외이용 5% 캐시백"
+    { normal: "쇼핑 ", point: "10% 할인" },
+    { normal: "생활 ", point: "10% 할인" },
+    { normal: "해외이용 ", point: "5% 캐시백" }
     ],
 
   fee: [
@@ -69,14 +69,14 @@ const cardData = [
 {
   id: "first-check",
   name: "신한카드 처음 체크",
-  desc: "학교끝, 혜택 시작!<br>나의 첫 체크카드",
-  img: "img/cate/shopping-card/first.png",
+  desc: "학교끝, 혜택 시작!\n나의 첫 체크카드",
+  img: "img/cate/shopping-card/first.gif",
   releaseDate: "2025.07.07",
 
   benefitsText: [
-    "스터디 5% 적립",
-    "카페·편의점·푸드 5~7% 적립",
-    "사진·쇼핑 1천/3천 포인트 적립"
+    { normal: "스터디 ", point: "5% 적립" },
+    { normal: "카페·편의점·푸드 ", point: "5~7% 적립" },
+    { normal: "사진·쇼핑 ", point: "1천/3천 포인트 적립" }
   ],
 
   fee: [
@@ -134,10 +134,10 @@ const cardData = [
   releaseDate: "2025.07.07",
 
   benefitsText: [
-    "스터디 5% 적립",
-    "카페·편의점·푸드 5~7% 적립",
-    "사진·쇼핑 1천/3천 포인트 적립"
-  ],
+    { normal: "스터디 ", point: "5% 적립" },
+    { normal: "카페·편의점·푸드 ", point: "5~7% 적립" },
+    { normal: "사진·쇼핑 ", point: "1천/3천 포인트 적립" }
+ ],
 
   fee: [
     {
@@ -191,11 +191,11 @@ const cardData = [
   img: "img/cate/shopping-card/discount plan.png",
   releaseDate: "2025.03.24",
 
-  benefitsText: [
-    "외식·생활·쇼핑비 10% 할인",
-    "쇼핑·주유·생활 5~10% 할인",
-    "공과금·디지털구독 10~20% 할인"
-  ],
+ benefitsText: [
+    { normal: "외식·생활·쇼핑비 ", point: "10% 할인" },
+    { normal: "쇼핑·주유·생활 ", point: "5~10% 할인" },
+    { normal: "공과금·디지털구독 ", point: "10~20% 할인" }
+ ],
 
   fee: [
     {
@@ -268,10 +268,9 @@ const cardData = [
   releaseDate: "2025.03.24",
 
   benefitsText: [
-    "외식·생활·쇼핑비 10% 할인",
-    "쇼핑·주유·생활 5~10% 할인",
-    "정기결제·디지털구독 할인",
-    "공항 라운지 서비스"
+    { normal: "외식·배달·편의점 ", point: "10% 할인" },
+    { normal: "쇼핑·주유·생활 ", point: "5~10% 할인" },
+    { normal: "장보기 ", point: "3만원 캐시백" },
   ],
 
   fee: [
@@ -353,11 +352,11 @@ const cardData = [
   img: "img/popular/simple-plan+.png",
   releaseDate: "2026.07.04",
 
-  benefitsText: [
-    "실적 상관 없이 국내 1.5% 할인",
-    "실적 충족 시 최대 2% 할인",
-    "마이샵·정기결제·공과금 할인"
-  ],
+ benefitsText: [
+    { normal: "실적 상관 없이 국내 ", point: "1.5% 할인" },
+    { normal: "실적·한도 없이 ", point: "해외 2% 할인" },
+    { normal: "마트/병원/주유 ", point: "3만원 웰컴 캐시백" }
+ ],
 
   fee: [
     {
@@ -423,9 +422,9 @@ const cardData = [
   releaseDate: "2026.07.04",
 
   benefitsText: [
-    "실적 상관 없이 국내 1% 할인",
-    "실적 충족 시 최대 2% 할인",
-    "국내 2~3개월 무이자 할부"
+    { normal: "실적·한도 없이 ", point: "국내 1% 할인" },
+    { normal: "실적·한도 없이 ", point: "해외 2% 할인" },
+    { normal: "국내 2~3개월 ", point: "무이자 할부" }
   ],
 
   fee: [
@@ -487,9 +486,9 @@ const cardData = [
   releaseDate: "2015.09.03",
 
   benefitsText: [
-    "월납요금 10% 할인",
-    "Time 10% 할인",
-    "주말 주유소 60원/ℓ 할인"
+    { normal: "월납요금 ", point: "10% 할인" },
+    { normal: "Time ", point: "10% 할인" },
+    { normal: "주말 주유소 ", point: "60원/ℓ 할인" }
   ],
 
   fee: [
@@ -550,15 +549,15 @@ const cardData = [
 {
   id: "first",
   name: "신한카드 처음",
-  desc: "고민없이 적립받고 소비도 관리하는<br>나의 첫 신용카드",
-  img: "img/popular/first.png",
+  desc: "고민없이 적립받고 소비도 관리하는 나의 첫 신용카드",
+  img: "img/popular/first.gif",
   releaseDate: "2024.04.02",
 
   benefitsText: [
-    "음식·생활·패션 5% 적립",
-    "통신·구독·멤버스 최대 20% 적립",
-    "소비관리 보너스 매월 최대 1만P"
-  ],
+    { normal: "음식·생활·패션 ", point: "5% 적립" },
+    { normal: "통신·구독·멤버스 최대 ", point: "20% 적립" },
+    { normal: "소비관리 보너스 ", point: "매월 최대 1만P" }
+   ],
 
   fee: [
     {
@@ -642,13 +641,13 @@ const cardData = [
   id: "deep-oil",
   name: "신한카드 Deep Oil",
   desc: "속 깊은 주유혜택",
-  img: "img/popular/oil.png",
+  img: "img/popular/oil.gif",
   releaseDate: "2018.02.13",
 
   benefitsText: [
-    "직접고른 주유소 10% 할인",
-    "정비·주차장 10% 할인",
-    "편의점·커피·택시 5% 할인"
+    { normal: "직접고른 주유소 ", point: "10% 할인" },
+    { normal: "정비·주차장 ", point: "10% 할인" },
+    { normal: "편의점·커피·택시 ", point: "5% 할인" }
   ],
 
   fee: [
@@ -719,9 +718,9 @@ const cardData = [
   releaseDate: "2019.05.23",
 
   benefitsText: [
-    "국내/해외 1천원당 1마일 적립",
-    "항공/면세 2배 적립",
-    "해외 2배 적립"
+    { normal: "국내/해외 ", point: "1천원당 1마일 적립" },
+    { normal: "항공/면세 ", point: "2배 적립" },
+    { normal: "해외 ", point: "2배 적립" }
   ],
 
   fee: [
@@ -775,13 +774,13 @@ const cardData = [
   id: "edu-plan-plus",
   name: "신한카드 Edu Plan+",
   desc: "교육비 혜택에 더 집중한 교육카드",
-  img: "img/popular/eduplan+.png",
+  img: "img/popular/eduplan+.gif",
   releaseDate: "2024.07.01",
 
   benefitsText: [
-    "학원비 캐시백 월 최대 10만원",
-    "할인점·의료·정기결제 캐시백 월 최대 4천원",
-    "메가박스 영화 할인 월 7천원"
+    { normal: "학원비 캐시백 월 최대 ", point: "10만원" },
+    { normal: "할인점·의료·정기결제 캐시백 월 최대 ", point: "4천원" },
+    { normal: "메가박스 영화 할인 월 ", point: "7천원" }
   ],
 
   fee: [
@@ -843,9 +842,9 @@ const cardData = [
   releaseDate: "2024.03.27",
 
   benefitsText: [
-    "대중교통 10% 할인",
-    "간편결제 5% 할인",
-    "생활 부문 5% 할인"
+    { normal: "대중교통 ", point: "10% 할인" },
+    { normal: "간편결제 ", point: "5% 할인" },
+    { normal: "생활 부문 ", point: "5% 할인" }
   ],
 
   fee: [
@@ -919,10 +918,10 @@ const cardData = [
   img: "img/popular/theclassic+.png",
   releaseDate: "2015.07.30",
 
-  benefitsText: [
-    "Gift Option 옵션품목 중 택1",
-    "항공 마일리지 최대 1.5 적립",
-    "공항라운지 더라운지 제공"
+ benefitsText: [
+    { normal: "Gift Option ", point: "옵션품목 중 택1" },
+    { normal: "항공 마일리지 ", point: "최대 1.5 적립" },
+    { normal: "공항라운지 ", point: "더라운지 제공" }
   ],
 
   fee: [
@@ -1003,13 +1002,13 @@ const cardData = [
   id: "sol-travel-check",
   name: "신한카드 SOL트래블 체크",
   desc: "해외여행은 SOL트래블로!",
-  img: "img/popular/soltravel.png",
+  img: "img/popular/soltravel.gif",
   releaseDate: "2024.01.19",
 
   benefitsText: [
-    "해외 이용 수수료 면제",
-    "더라운지 본인 무료 입장",
-    "해외 대중교통 1% 결제일 할인"
+    { normal: "해외 이용 수수료 ", point: "면제" },
+    { normal: "더라운지 ", point: "본인 무료 입장" },
+    { normal: "해외 대중교통 ", point: "1% 결제일 할인" }
   ],
 
   fee: [
@@ -1084,3 +1083,22 @@ const cardData = [
 ]
 }
 ]
+
+const commonNotices = {
+  change: [
+    "· 카드 이용 시 제공되는 포인트 및 할인 혜택 등의 부가서비스는 카드 신규출시 이후 3년 이상 축소·폐지 없이 유지됩니다.",
+    "· 상기에도 불구하고, 다음과 같은 사유가 발생한 경우 카드사는 부가서비스를 변경할 수 있습니다.",
+    "① 제휴업체의 휴업·파산·경영상의 위기 등으로 서비스 제공이 불가한 경우",
+    "② 제휴업체가 해당 부가서비스를 축소하거나 변경한 경우",
+    "③ 부가서비스를 3년 이상 제공한 상태에서 카드의 수익성이 현저히 낮아진 경우"
+  ],
+  info: [
+    "회사명: 신한카드",
+    "계약 체결 전, 카드 상품별 연회비, 이용조건 등 상세사항은 금융상품설명서와 약관을 확인하시기 바랍니다.",
+    "금융소비자는 금융소비자보호법 제19조 제1항에 따라 해당 금융상품 또는 서비스에 대하여 설명 받을 권리가 있습니다.",
+    "연체이자율은 회원별, 이용상품별 약정금리+최대 연 3%, 법정 최고금리(연 20%) 이내에서 적용됩니다.",
+    "신용카드 발급이 부적정한 경우 카드발급이 제한될 수 있습니다.",
+    "상환능력에 비해 신용카드 사용액이 과도할 경우 개인신용평점이 하락할 수 있습니다.",
+    "개인신용평점 하락 시 금융거래와 관련된 불이익이 발생할 수 있습니다."
+  ]
+};
