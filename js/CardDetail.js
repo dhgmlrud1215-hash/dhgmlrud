@@ -23,6 +23,7 @@ function CardDetail() {
       {tab === "benefit" && (
         <div className="benefit-wrap">
           {card.benefits.map((item, index) => (
+            
             <section className="benefit-box" key={index}>
               <h3>{item.title}</h3>
               {item.desc.map((text, i) => (
