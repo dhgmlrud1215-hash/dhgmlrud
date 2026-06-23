@@ -251,7 +251,13 @@ function Home() {
                 </ul>
 
                 <div className="card-buttons">
-                    <a href="#" className="btn-detail" aria-label="신한카드 Shopping 상세보기">상세보기</a>
+                    <Link
+                        to="/card/Shopping"
+                        className="btn-detail"
+                        aria-label="신한카드 Shopping 상세보기"
+                        >
+                        상세보기
+                    </Link>
                     <a href="#" className="btn-apply" aria-label="신한카드 Shopping 카드신청">카드신청</a>
                 </div>
               </div> 
@@ -285,7 +291,13 @@ function Home() {
                 </ul>
 
                 <div className="card-buttons">
-                    <a href="#" className="btn-detail" aria-label="신한카드 처음 체크 상세보기">상세보기</a>
+                    <Link
+                        to="/card/first-check"
+                        className="btn-detail"
+                        aria-label="신한카드 처음 체크 상세보기"
+                        >
+                        상세보기
+                    </Link>
                     <a href="#" className="btn-apply" aria-label="신한카드 처음 체크 카드신청">카드신청</a>
                 </div>
               </div> 
@@ -319,7 +331,13 @@ function Home() {
                 </ul>
 
                 <div className="card-buttons">
-                    <a href="#" className="btn-detail" aria-label="신한카드 처음 체크(냐한남자) 상세보기">상세보기</a>
+                    <Link
+                        to="/card/first-check-bananamale"
+                        className="btn-detail"
+                        aria-label="신한카드 처음 체크(냐한남자) 상세보기"
+                        >
+                        상세보기
+                    </Link>
                     <a href="#" className="btn-apply" aria-label="신한카드 처음 체크(냐한남자) 카드신청">카드신청</a>
                 </div>
               </div> 
@@ -353,7 +371,13 @@ function Home() {
                 </ul>
 
                 <div className="card-buttons">
-                    <a href="#" className="btn-detail" aria-label="신한카드 Discount Plan 상세보기">상세보기</a>
+                    <Link
+                        to="/card/discount-plan"
+                        className="btn-detail"
+                        aria-label="신한카드 Discount Plan 상세보기"
+                        >
+                        상세보기
+                    </Link>
                     <a href="#" className="btn-apply" aria-label="신한카드 Discount Plan 카드신청">카드신청</a>
                 </div>
               </div> 
@@ -387,7 +411,13 @@ function Home() {
                 </ul>
 
                 <div className="card-buttons">
-                    <a href="#" className="btn-detail" aria-label="신한카드 Discount Plan+ 상세보기">상세보기</a>
+                    <Link
+                        to="/card/discount-plan-plus"
+                        className="btn-detail"
+                        aria-label="신한카드 Discount Plan+ 상세보기"
+                        >
+                        상세보기
+                    </Link>
                     <a href="#" className="btn-apply" aria-label="신한카드 Discount Plan+ 카드신청">카드신청</a>
                 </div>
               </div> 

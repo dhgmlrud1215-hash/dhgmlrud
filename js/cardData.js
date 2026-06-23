@@ -3,7 +3,7 @@ const cardData = [
   id: "Shopping",
   name: "신한카드 Shopping",
   desc: "언제 어디서나 특별한 쇼핑의 순간!",
-  img: "img/cate/shopping-car/shopping.png",
+  img: "img/cate/shopping-card/shopping.png",
   releaseDate: "2016.05.31",
 
   benefitsText: [
@@ -69,7 +69,7 @@ const cardData = [
 {
   id: "first-check",
   name: "신한카드 처음 체크",
-  desc: "학교끝, 혜택 시작!\n나의 첫 체크카드",
+  desc: "학교끝, 혜택 시작! 나의 첫 체크카드",
   img: "img/cate/shopping-card/first.gif",
   releaseDate: "2025.07.07",
 
@@ -130,7 +130,7 @@ const cardData = [
   id: "first-check-bananamale",
   name: "신한카드 처음 체크(나한남자)",
   desc: "춘배 팬클럽 1호!",
-  img: "img/cate/shopping-card/first-check(chunbae).png",
+  img: "img/cate/shopping-card/first-check(chunbae).gif",
   releaseDate: "2025.07.07",
 
   benefitsText: [

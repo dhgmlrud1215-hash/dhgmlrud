@@ -53,7 +53,7 @@ function CardDetail() {
 
       <section id="benefit" className="card-benefit-wrap">
         {card.benefits.map((item, index) => (
-          <div className="benefit-box" key={index}>
+          <div className="card-benefit-box" key={index}>
             <h3>{item.title}</h3>
             {item.desc.map((text, i) => (
               <p key={i}>· {text}</p>
