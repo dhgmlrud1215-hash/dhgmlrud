@@ -383,109 +383,132 @@ h3{color: #222;}
 
 .solpay img {
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: block;
   border-radius: 5px;
 }
 
 /* footer*/
 footer {
-    margin: 0 20px; 
-    color: #222;
+  margin: 0 20px;
+  color: #222;
+  font-size: 12px;
 }
 
 .shinhan-footer {
-    border-top: 1px solid #E5E7EB;
+  border-top: 1px solid #e5e7eb;
+  padding: 22px 0 28px;
 }
 
 .footer-number {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto 0;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 18px auto 0;
+  text-align: center;
 }
 
 .center {
-    width: 35%;
-    font-size: 15px;
-    font-weight: 500;
+  width: 35%;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .beside {
-    width: 65%;
-    display:flex;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  gap: 18px;
 }
 
 .beside li {
-    font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
+  color: #444;
 }
 
 .footer-nav {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
-  gap: 10px;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
   white-space: nowrap;
-  font-size: 15px;
+  font-size: 12px;
+}
+
+.footer-nav a {
+  color: #444;
 }
 
 .footer-nav strong {
-    font-size: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #222;
 }
 
-
 .footer-nav a::before {
-    content: "|";
-    color: #ccc;
-    margin-right: 10px;
+  content: "|";
+  margin-right: 8px;
+  color: #d1d5db;
 }
 
 .footer-nav a:first-child::before {
-    content: "";
+  content: "";
+  margin-right: 0;
 }
 
 .footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  margin-top: 24px;
 }
 
-
 .footer-sns {
-    margin-left: 40px;
+  display: flex;
+  gap: 8px;
 }
 
 .footer-sns img {
-    width: 20px; 
-    height: 20px;
-    margin-right: 10px;
+  width: 18px;
+  height: 18px;
 }
 
 .footer-info {
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.6;
+  text-align: center;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #666;
 }
 
-
-.copyright {color: #ccc;}
+.copyright {
+  color: #aaa;
+}
 
 .ert img {
-    width: 30px;
-    margin: 10px 10px;
+  width: 28px;
+  margin: 8px;
 }
 
 .site {
-    color: #666666;
-    width: 100px;
+  width: 100px;
+  height: 26px;
+  font-size: 11px;
+  color: #666;
+  border: 1px solid #ddd;
 }
 
-.site option {color: #333;}
+.site option {
+  color: #333;
+}
 
-.site option:first-child {color:rgb(0,0,0,0.5) ;}
+.site option:first-child {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 
 /* 팝업창 */

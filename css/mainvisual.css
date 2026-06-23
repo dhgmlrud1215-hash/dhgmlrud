@@ -22,49 +22,58 @@
   border-radius: 10px;
 }
 
-.login-box {
-  width: 320px;
+.login-area {
+
   align-self: stretch;
-  box-sizing: border-box;
   flex: none;
   display: flex;
   flex-direction: column;
-  padding: 28px 24px 32px;
-  border-radius: 10px;
+  gap: 12px;
+}
+
+.login-card,
+.quick-card,
+.alert-card {
+  box-sizing: border-box;
+  border-radius: 5px;
   background: #fff;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
-.login-box h3 {
-  font-size: 24px;
+.login-card {
+  padding: 24px;
+}
+
+.login-card h3 {
+  font-size: 22px;
   margin-bottom: 8px;
 }
 
-.login-box p {
-  font-size: 14px;
+.login-card p {
+  font-size: 13px;
   color: #666;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .login-btn {
   display: block;
   width: 100%;
-  padding: 14px 0;
-  border-radius: 10px;
+  padding: 13px 0;
+  border-radius: 8px;
   background: #0046ff;
   color: #fff;
   text-align: center;
+  font-size: 14px;
   font-weight: 700;
-  margin: 14px 0 ;
+  margin-bottom: 12px;
 }
 
 .login-links {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  font-size: 13px;
-  margin: 10px 0 25px;
+  gap: 7px;
+  font-size: 12px;
 }
 
 .login-links a,
@@ -72,21 +81,33 @@
   color: #777;
 }
 
+.quick-card {
+  padding: 20px 24px 22px;
+}
+
+.quick-title {
+  margin-bottom: 12px;
+}
+
+.quick-title strong {
+  font-size: 14px;
+  color: #222;
+}
+
 .mini-menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-top: 30px;
+  gap: 8px;
 }
 
 .mini-menu a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 54px;
+  height: 46px;
   background: #f5f7fb;
-  border-radius: 12px;
-  font-size: 14px;
+  border-radius: 8px;
+  font-size: 13px;
   color: #222;
 }
 
@@ -100,29 +121,33 @@
   font-weight: 700;
 }
 
-.login-alert {
+.alert-card {
   margin-top: auto;
+  padding: 18px 20px;
+  text-align: center;
 }
 
 .alert-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .alert-title img {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .alert-title strong {
-  font-size: 15px;
+  font-size: 13px;
   color: #0046ff;
 }
 
-.login-alert p {
-  font-size: 13px;
+.alert-card p {
+  margin: 0;
+  font-size: 12px;
   color: #555;
   line-height: 1.4;
 }
