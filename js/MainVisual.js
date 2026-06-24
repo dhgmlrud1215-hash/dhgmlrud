@@ -1,29 +1,36 @@
 function MainVisual() {
-    const { Link } = ReactRouterDOM;
-    const [index, setIndex] = React.useState(0);
+        const { Link } = ReactRouterDOM;
+        const [index, setIndex] = React.useState(0);
 
-    const isLogin = localStorage.getItem("isLogin") === "true";
-    const userName = localStorage.getItem("userName") || "회원";
+        const [isLogin, setIsLogin] = React.useState(
+        localStorage.getItem("isLogin") === "true"
+        );
 
-    const handleLogout = () => {
+        const userName = localStorage.getItem("userName");
+
+        const handleLogout = () => {
         localStorage.removeItem("isLogin");
         localStorage.removeItem("userName");
-        window.location.reload();
-    };
+        setIsLogin(false);
 
-    const images = [
-        "img/header/mainvn1-fixed.png",
-        "img/header/mainvn2-fixed.png",
-        "img/header/mainvn3-fixed.png"
-    ];
+        alert("로그아웃 되었습니다.")
+        };
 
-    React.useEffect(() => {
-        const timer = setInterval(() => {
-            setIndex(prev => (prev + 1) % images.length);
-        }, 3000);
+        const images = [
+            "img/header/mainvn1-fixed.png",
+            "img/header/mainvn2-fixed.png",
+            "img/header/mainvn3-fixed.png"
+        ];
 
-        return () => clearInterval(timer);
-    }, []);
+        React.useEffect(() => {
+            const timer = setInterval(() => {
+                setIndex(prev => (prev + 1) % images.length);
+            }, 3000);
+
+            return () => clearInterval(timer);
+        }, []);
+
+
 
     return (
         <section className="main-visual">
@@ -33,20 +40,33 @@ function MainVisual() {
 
             <aside className="login-area" aria-label="로그인 및 주요 서비스">
                 <div className="login-card">
-                    <h3>안녕하세요</h3>
-                    <p>신한카드 회원 서비스를 이용해보세요.</p>
+                    <h3>{isLogin ? userName : "안녕하세요"}</h3>
 
-                    <Link to="/login" className="login-btn">
+                    <p>
+                        {isLogin
+                        ? "신한카드 회원 서비스를 이용 중입니다."
+                        : "신한카드 회원 서비스를 이용해보세요."}
+                    </p>
+
+                    {isLogin ? (
+                        <button className="login-btn" onClick={handleLogout}>
+                        로그아웃
+                        </button>
+                    ) : (
+                        <Link to="/login" className="login-btn">
                         로그인
-                    </Link>
+                        </Link>
+                    )}
 
-                    <div className="login-links">
+                    {!isLogin && (
+                        <div className="login-links">
                         <a href="#">아이디 찾기</a>
                         <span>|</span>
                         <a href="#">비밀번호 재설정</a>
                         <span>|</span>
                         <a href="#">회원가입</a>
-                    </div>
+                        </div>
+                    )}
                 </div>
 
                 <div className="quick-card">

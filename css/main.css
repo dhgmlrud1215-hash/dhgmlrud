@@ -223,8 +223,10 @@ h3{color: #222;}
 
 .card-img {
     width: 150px;
-    margin-top: 22px;
     margin-right: 4px;
+
+    display: flex;
+    align-items: center;
 }
 
 .card-img img {
