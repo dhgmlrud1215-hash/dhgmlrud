@@ -282,6 +282,10 @@ h3{color: #222;}
 /* 빠른서비스 */
 .service {margin-bottom: 100px;}
 
+.service p {
+    font-size: 15px;
+}
+
 .service h3 {
     margin-bottom: 20px; 
     font-weight: 600;
@@ -289,7 +293,7 @@ h3{color: #222;}
 
 .service-content {
     background:rgb(234,241,255,0.5); 
-    padding: 22px 28px;
+    padding: 20px 25px;
     border-radius: 5px;
 } 
 
@@ -312,8 +316,8 @@ h3{color: #222;}
 }
 
 .group img {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     margin-bottom: 4px;
 }
 
@@ -383,7 +387,7 @@ h3{color: #222;}
 
 .solpay img {
   width: 100%;
-  height: 500px;
+  height: 550px;
   display: block;
   border-radius: 5px;
 }

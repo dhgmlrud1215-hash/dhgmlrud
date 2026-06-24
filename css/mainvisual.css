@@ -10,8 +10,8 @@
 
 .main-visual .banner {
   flex: 1;
-  aspect-ratio: 16 / 9;
-  max-height: 700px; 
+  aspect-ratio: 16 / 8.7;
+  max-height: 670px; 
   min-width: 0;
 }
 
@@ -26,23 +26,25 @@
 .login-area {
   align-self: stretch;
   flex: none;
+  width: 470px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: center;
+  gap: 20px;
 }
 
 .login-card,
 .quick-card,
 .alert-card {
   box-sizing: border-box;
-  border-radius: 5px!important;
+  border-radius: 5px !important;
   background: #fff;
   box-shadow: 0 8px 24px rgba(0,0,0,0.08);
   flex-shrink: 0;
 }
 
 .login-card {
-  padding: 24px;
+  padding: 40px 36px;
 }
 
 .login-card h3 {
@@ -83,7 +85,7 @@
 }
 
 .quick-card {
-  padding: 20px 24px 22px;
+  padding: 30px 24px 32px;
 }
 
 .quick-title {
@@ -123,7 +125,7 @@
 }
 
 .alert-card {
-  padding: 18px 20px;
+  padding: 28px 20px;
   text-align: center;
 }
 
